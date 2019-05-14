@@ -32,8 +32,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(500, 500));
+        setSize(new java.awt.Dimension(400, 400));
         getContentPane().setLayout(null);
 
         jButton4.setText("País");
@@ -43,7 +46,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton4);
-        jButton4.setBounds(180, 250, 70, 23);
+        jButton4.setBounds(40, 250, 70, 23);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel1.setText("Tela Principal");
@@ -57,7 +60,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(180, 200, 70, 23);
+        jButton1.setBounds(40, 200, 70, 23);
 
         jButton2.setText("Editora");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -66,7 +69,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(180, 150, 70, 23);
+        jButton2.setBounds(40, 150, 70, 23);
 
         jButton3.setText("Livro");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -75,18 +78,25 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(180, 100, 70, 23);
+        jButton3.setBounds(40, 100, 70, 23);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\evilg\\Pictures\\0_oY-3Oz5VVt080BYG.jpg")); // NOI18N
         jLabel2.setText("jLabel2");
+        jLabel2.setMaximumSize(new java.awt.Dimension(340, 240));
+        jLabel2.setMinimumSize(new java.awt.Dimension(340, 240));
+        jLabel2.setPreferredSize(new java.awt.Dimension(340, 300));
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(-250, 0, 690, 320);
+        jLabel2.setBounds(400, 400, 690, 320);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrador\\Downloads\\marcosoliveira00.jpg")); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(130, 100, 310, 200);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-ManutencaoAutor janela = new ManutencaoAutor(this, true);
+Mestre janela = new Mestre(this, true);
 janela.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -96,7 +106,7 @@ janela.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-ManutencaoLivro janela = new ManutencaoLivro(this, true);
+ManutencaoAutor janela = new ManutencaoAutor(this, true);
 janela.setVisible(true);      
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -147,5 +157,6 @@ janela.setVisible(true);             // TODO add your handling code here:
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
